@@ -16,7 +16,7 @@ plugins {
     alias(libs.plugins.hangar.publish)
 }
 
-version = "3.5.0"
+version = "3.5.2"
 
 val coverageExclusions = listOf(
     // Third-party shaded libraries
@@ -51,6 +51,7 @@ val coverageExclusions = listOf(
     "**/hooks/PacketEventsHookImpl.java",
     "**/hooks/HeadDatabaseHook.java",
     "**/hooks/HeadDBHook.java",
+    "**/hooks/HeadDB7Hook.java",
     "**/hooks/visual/NexoHook.java",
     "**/hooks/visual/NexoFurnitureRenderer.java",
     "**/hooks/visual/ItemsAdderFurnitureRenderer.java",
@@ -133,6 +134,7 @@ dependencies {
     compileOnly(libs.placeholderapi)
     compileOnly(libs.headdatabase.api)
     compileOnly(libs.headdb.api)
+    compileOnly(libs.headdb7.api)
     compileOnly(libs.packetevents)
     compileOnly(libs.worldguard)
     compileOnly(libs.nexo) { isTransitive = false }
